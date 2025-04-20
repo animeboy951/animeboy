@@ -3,63 +3,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solo Leveling Season 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solo Leveling - Season 2</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0c0c1e;
+      color: white;
     }
     header {
-      background-color: #1e1e1e;
-      padding: 20px;
+      background: linear-gradient(90deg, #0028ff, #ff002f);
+      padding: 1rem;
       text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
     }
-    .hero {
-      width: 100%;
-      max-height: 500px;
-      overflow: hidden;
+    .video-container iframe, .video-container video {
+      width: 90%;
+      height: 480px;
+      border: 5px solid #ff002f;
+      border-radius: 10px;
     }
-    .hero img {
-      width: 100%;
-      height: auto;
+    .episodes {
+      text-align: center;
+      margin-top: 2rem;
     }
-    .content {
-      padding: 20px;
+    .episodes button {
+      background: #0028ff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
     }
-    .episode {
-      margin-bottom: 15px;
-    }
-    .episode a {
-      color: #00afff;
-      text-decoration: none;
-    }
-    .episode a:hover {
-      text-decoration: underline;
+    .episodes button:hover {
+      background: #ff002f;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Solo Leveling Season 2</h1>
-  </header>
-  <div class="hero">
-    <img src="https://lede-admin.aftermath.site/wp-content/uploads/sites/55/2025/03/Solo-Leveling-Crunchyroll-Anime-A1-Pictures.jpg" alt="Solo Leveling">
+  <header>Solo Leveling - Season 2</header>
+  <div class="video-container">
+    <video controls poster="https://lede-admin.aftermath.site/wp-content/uploads/sites/55/2025/03/Solo-Leveling-Crunchyroll-Anime-A1-Pictures.jpg">
+      <source src="https://hls34-eu.zcdn.stream/504c675ffaaed1379d33bdcb74c36288/2025-01-05/720.m3u8" type="application/x-mpegURL">
+      Your browser does not support the video tag.
+    </video>
   </div>
-  <div class="content">
-    <h2>Episode List</h2>
-    <div class="episode">
-      <strong>Episode 1 - You Aren't E-Rank, Are You</strong><br />
-      <a href="https://hls34-eu.zcdn.stream/504c675ffaaed1379d33bdcb74c36288/2025-01-05/720.m3u8?token=3ed91947e806a424b12c038ff1fea402">Watch Now</a>
-    </div>
-    <!-- Add more episodes here -->
+  <div class="episodes">
+    <button>S2 Eps1</button>
+    <button>S2 Eps2</button>
+    <button>S2 Eps3</button>
+    <button>S2 Eps4</button>
+    <button>S2 Eps5</button>
+    <button>S2 Eps6</button>
+    <button>S2 Eps7</button>
+    <button>S2 Eps8</button>
+    <button>S2 Eps9</button>
+    <button>S2 Eps10</button>
   </div>
 </body>
 </html>
