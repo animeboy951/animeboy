@@ -1,73 +1,43 @@
-
 <!DOCTYPE html>
-<html lang="ms"><head><meta charset="UTF-8"><title>Anime19Pro - Kategori</title>
-<style>
-  body { font-family: Arial, sans-serif; background: #111; color: #fff; margin: 20px; }
-  h1, h2 { color: #ff3c3c; }
-  .anime-card { background: #222; padding: 15px; margin-bottom: 20px; border-radius: 10px; display: flex; gap: 15px; }
-  .anime-card img { width: 160px; border-radius: 10px; }
-  .anime-card a.btn { display: inline-block; background: #ff3c3c; color: #fff; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-  .anime-card a.btn:hover { background: #ff5e5e; }
-  iframe { width: 100%; height: 480px; margin-top: 15px; border-radius: 10px; border: none; }
-  .btn-dl { background: #009dff; margin-top: 10px; display: inline-block; padding: 10px 15px; border-radius: 5px; color: white; text-decoration: none; }
-</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeBoy - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>AnimeBoy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Kategori</a>
+      <a href="https://t.me/yourchannel" target="_blank">Telegram</a>
+    </nav>
+  </header>
 
-<input type="text" id="search" placeholder="Cari Anime..." style="padding: 10px; width: 100%; max-width: 400px; font-size: 16px; margin-bottom: 20px; border-radius: 5px; border: none;">
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("search");
-    const cards = document.querySelectorAll(".anime-card");
-    searchInput.addEventListener("input", function () {
-      const keyword = this.value.toLowerCase();
-      cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-        card.style.display = text.includes(keyword) ? "flex" : "none";
-      });
-    });
-  });
-</script>
+  <section class="hero">
+    <img src="images/solo-leveling.jpg" alt="Solo Leveling Hero Banner">
+  </section>
 
-<h1>Anime19Pro - Pilih Anime</h1>
+  <main>
+    <h2>Anime Popular</h2>
+    <div class="anime-grid">
+      <div class="anime-card">
+        <img src="images/solo-leveling.jpg" alt="Solo Leveling">
+        <h3>Solo Leveling</h3>
+        <a href="solo-leveling-season-2.html" class="play-btn">Play</a>
+      </div>
+      <div class="anime-card">
+        <img src="images/one-piece.jpg" alt="One Piece">
+        <h3>One Piece</h3>
+        <a href="#" class="play-btn">Play</a>
+      </div>
+    </div>
+  </main>
 
-    <div class="anime-card">
-        <img src="https://i.imgur.com/dnQlc5z.jpeg" alt="One Piece">
-        <div>
-            <h2>One Piece</h2>
-            <a href="one-piece.html" class="btn">Tonton Sekarang</a>
-        </div>
-    </div>
-    
-    <div class="anime-card">
-        <img src="https://i.imgur.com/nKTIfwe.jpeg" alt="Solo Leveling">
-        <div>
-            <h2>Solo Leveling</h2>
-            <a href="solo-leveling.html" class="btn">Tonton Sekarang</a>
-        </div>
-    </div>
-    
-    <div class="anime-card">
-        <img src="https://i.imgur.com/IKKO2Oe.jpeg" alt="Naruto">
-        <div>
-            <h2>Naruto</h2>
-            <a href="naruto.html" class="btn">Tonton Sekarang</a>
-        </div>
-    </div>
-    
-    <div class="anime-card">
-        <img src="https://i.imgur.com/UXTWGrx.jpeg" alt="Nanatsu no Taizai">
-        <div>
-            <h2>Nanatsu no Taizai</h2>
-            <a href="nanatsu.html" class="btn">Tonton Sekarang</a>
-        </div>
-    </div>
-    
-    <div class="anime-card">
-        <img src="https://i.imgur.com/YpYi7EJ.jpeg" alt="Wind Breaker">
-        <div>
-            <h2>Wind Breaker</h2>
-            <a href="wind-breaker.html" class="btn">Tonton Sekarang</a>
-        </div>
-    </div>
-    </body></html>
+  <footer>
+    <p>&copy; 2025 AnimeBoy</p>
+  </footer>
+</body>
+</html>

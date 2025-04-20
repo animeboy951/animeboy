@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: white;
+}
+header {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+main {
+  padding: 20px;
+}
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.anime-card {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.anime-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.play-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #e91e63;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+}
